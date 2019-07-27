@@ -41,7 +41,7 @@ void Renderer::Draw(std::unique_ptr<Settings>& _settings)
 				{
 					for (int k = 0; k < _settings->score; k++)
 					{
-						if (_settings->tailXCoordd[k] == j && _settings->tailYCoordd[k] == i)
+						if (_settings->tailXCoord[k] == j && _settings->tailYCoord[k] == i)
 						{
 							std::cout << visuals.snakeTail;
 							printTail = true;

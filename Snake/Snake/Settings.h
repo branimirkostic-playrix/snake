@@ -12,11 +12,8 @@ public:
 
 public:
 	bool gameOver;
-	//int tailXCoord[100];
-	//int tailYCoord[100];
-
-	std::vector<int> tailXCoordd;
-	std::vector<int> tailYCoordd;
+	std::vector<int> tailXCoord;
+	std::vector<int> tailYCoord;
 	int score = 0;
 	int snakeXCoord;
 	int snakeYCoord;

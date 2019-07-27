@@ -11,8 +11,8 @@ Settings::Settings()
 	this->fruitXCoord = rand() % this->arenaWidth;
 	this->fruitYCoord = rand() % this->arenaHeight;
 	// allocates memory for max number of array values (all the slots of the arena - the borders)
-	this->tailXCoordd.reserve((this->GetArenaHeight() * this->GetArenaWidth()) - (this->GetArenaHeight() + this->GetArenaWidth()));
-	this->tailYCoordd.reserve((this->GetArenaHeight() * this->GetArenaWidth()) - (this->GetArenaHeight() + this->GetArenaWidth()));
+	this->tailXCoord.reserve((this->GetArenaHeight() * this->GetArenaWidth()) - (this->GetArenaHeight() + this->GetArenaWidth()));
+	this->tailYCoord.reserve((this->GetArenaHeight() * this->GetArenaWidth()) - (this->GetArenaHeight() + this->GetArenaWidth()));
 }
 
 int Settings::GetArenaHeight() const
