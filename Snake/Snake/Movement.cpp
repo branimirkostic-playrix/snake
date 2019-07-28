@@ -22,9 +22,6 @@ void Movement::TailMovement(std::unique_ptr<Settings>& _settings)
 	{
 		this->prevX = _settings->tailXCoord[0];
 		this->prevY = _settings->tailYCoord[0];
-		this->prev2X;
-		this->prev2Y;
-
 		_settings->tailXCoord.at(0) = _settings->snakeXCoord;
 		_settings->tailYCoord.at(0) = _settings->snakeYCoord;
 		for (int i = 1; i < _settings->score; i++)
