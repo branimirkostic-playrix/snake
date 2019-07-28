@@ -79,11 +79,6 @@ void Movement::PickingUpFruit(std::unique_ptr<Settings>& _settings)
 	if (_settings->snakeXCoord == _settings->fruitXCoord && _settings->snakeYCoord == _settings->fruitYCoord)
 	{
 		_settings->score++;
-		if (_settings->score == (_settings->GetArenaHeight() * _settings->GetArenaWidth()) - (_settings->GetArenaHeight() + _settings->GetArenaWidth()))
-		{
-			_settings->gameOver = true;
-		}
-
 		_settings->tailXCoord.push_back(_settings->snakeXCoord);
 		_settings->tailYCoord.push_back(_settings->snakeYCoord);
 		_settings->fruitXCoord = rand() % _settings->GetArenaWidth();
